@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>GuitarHub</h1>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-title="GuitarHub"
+  agent-id="6cbf1408-db96-4b21-b978-d4495b3f16f1"
+  language-code="en"
+></df-messenger>
+<style>
+    body {
+     margin: 0;
+     height: 100vh;
+    background-image: url(Untitled\ design\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;      /* vertically center */
+    justify-content: center;  /* horizontally center */
+    font-family: "Bangers", system-ui;
+  /* Remove padding-left! */
+}
+
+
+    h1 {
+    padding-top: 25vw;
+    color: #fff;
+    font-size: 15vw;        /* Responsive font size: 14% of viewport width */
+    margin: 0;
+    max-width: 90vw;        /* Prevents text from overflowing the viewport */
+    word-break: break-word; /* Breaks long words if needed */
+    text-align: center;
+    line-height: 1.1;
+}
+
+/* Further reduce font size for very small screens */
+@media (max-width: 500px) {
+  h1 {
+    display: none;
+  }
+}
+
+    df-messenger {
+      --df-messenger-button-titlebar-color: #444444;
+      --df-messenger-font-color: #f0f0f0;
+      --df-messenger-user-message: #888888;
+      --df-messenger-bot-message: #454040;
+      --df-messenger-chat-window-width: 300px;
+      --df-messenger-chat-window-height: 400px;
+      --df-messenger-chat-background-color: #f4e6e6;
+      --df-messenger-send-icon: #6b6b6b;
+    }
+  </style>
+
+</body>
+</html>
